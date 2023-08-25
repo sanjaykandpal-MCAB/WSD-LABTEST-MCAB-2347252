@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.menu-category {
+    margin-bottom: 20px;
+}
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.menu-item img {
+    max-width: 100px;
+    margin-right: 10px;
+}
+.menu-item-info {
+    flex: 1;
+}
+.menu-item-name {
+    font-weight: bold;
+}
+.menu-item-price {
+    color: #f76d57;
+}

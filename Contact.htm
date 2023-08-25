@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type='text/javascript'
+    src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[AAq2rTWosddnBQJpPEPqF-Ie6eex9fBwHMssdJU2FobcdIDqxkxWeTa2tWhTUQ6yq]' 
+    async defer>
+  </script>
+<style>
+    #myMap{
+        width: 50%;
+        height: 50%;
+    }
+</style>
+<script type='text/javascript'>
+
+function GetMap()
+{
+  var map = new Microsoft.Maps.Map('#myMap');
+  var map = new Microsoft.Maps.Map('#myMap', {
+    credentials: 'AAq2rTWosddnBQJpPEPqF-Ie6eex9fBwHMssdJU2FobcdIDqxkxWeTa2tWhTUQ6yq',
+    center: new Microsoft.Maps.Location(51.50632, -0.12714),
+    mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+    zoom: 10
+});
+    //Add your post map load code here.
+}
+</script>
+</head>
+<body>
+    <div id="myMap"></div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Homepage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item icon-link-hover">
+                  <a class="nav-link active"  href="#">MenuPage</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/AboutUs.htm">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Contact.htm">ContactUs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/reservation.htm">Reservation</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <div class="container">
+        <div class="contact-form">
+            <address>
+                <p>Address: Hosur Main Road, Bhavani Nagar, S.G. Palya, Bengaluru, Karnataka 560029</p>
+                <p>Phone Number: 1505412314</p>
+            </address>
+        </div>
+    </div>
+</body>
+</html>
